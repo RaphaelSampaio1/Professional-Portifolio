@@ -1,0 +1,50 @@
+### **GUIA: COMO ADICIONAR NOVOS PROJETOS AO PORTFÓLIO**
+
+Para adicionar um novo projeto sem quebrar o estilo ou a legibilidade, siga estes dois passos:
+
+#### **PASSO 1: No arquivo `projects.html`**
+Localize a `<div class="projects-grid">` e cole o código abaixo no final da lista de projetos.
+
+```html
+<!-- Novo Projeto -->
+<div class="project-card project-IDENTIFICADOR">
+  <a class="project-link" href="LINK_DO_PROJETO" target="_blank" rel="noopener">
+    <div class="project-overlay">
+      <div class="project-content">
+        <h3>NOME DO PROJETO</h3>
+        <p>DESCRIÇÃO CURTA (O que faz e qual o resultado/valor gerado).</p>
+        <div class="project-tags">
+          <span class="tag">TECNOLOGIA 1</span>
+          <span class="tag">TECNOLOGIA 2</span>
+          <span class="tag">CATEGORIA</span>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+```
+*   **IDENTIFICADOR:** Crie um nome único sem espaços (ex: `project-bot-n8n`).
+*   **LINK_DO_PROJETO:** URL do LinkedIn, GitHub ou YouTube.
+
+---
+
+#### **PASSO 2: No arquivo `styles.css`**
+Vá até o final da seção de projetos (onde estão as outras classes `.project-...`) e adicione a referência da imagem:
+
+```css
+.project-IDENTIFICADOR {
+  background-image: url("img/NOME_DA_IMAGEM.png");
+}
+```
+*   **IDENTIFICADOR:** Deve ser exatamente o mesmo nome que você usou no Passo 1.
+*   **NOME_DA_IMAGEM:** O nome exato do arquivo que você salvou na pasta `img/`.
+
+---
+
+### **REGRAS DE OURO (Dicas do Treinador):**
+1.  **Nomes de Arquivos:** Nunca use espaços ou caracteres especiais nos nomes das imagens (ex: use `bot_whatsapp.png` em vez de `bot whatsapp novo.png`).
+2.  **Legibilidade:** O estilo já está configurado com um "Overlay" (camada escura). Isso garante que, mesmo que sua imagem seja clara, o texto branco sempre será legível.
+3.  **Proporção:** O card é retangular horizontal (`260px` de altura). Se a imagem for muito vertical, o CSS vai centralizá-la automaticamente para não distorcer.
+4.  **Cache:** Se você trocar uma imagem e ela não mudar no site, aperte `Ctrl + F5` no navegador para forçar a atualização.
+
+==============================================================================================================================================
