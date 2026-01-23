@@ -476,6 +476,10 @@ body {
 }
 
 /* IMAGENS ESPECÍFICAS DE CADA PROJETO (BACKGROUND) */
+.project-OCR-banking {
+  background-image: url("img/OCR Banking Data.png");
+}
+
 .project-dashboard {
   background-image: url("img/FLUXO CAIXA DASH.png");
 }
