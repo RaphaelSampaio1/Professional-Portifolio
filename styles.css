@@ -158,6 +158,40 @@ body {
   flex-wrap: wrap;
 }
 
+.hero-social {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.hero-social-link {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-alt);
+  color: var(--text-primary);
+  transition: var(--transition);
+}
+
+.hero-social-link svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.hero-social-link:hover {
+  border-color: var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--background);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
 /* ====
    BUTTONS
    ==== */
