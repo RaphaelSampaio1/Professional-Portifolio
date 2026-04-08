@@ -25,6 +25,7 @@
         <a href="projects.html">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
+      <button id="dark-mode-toggle" class="dark-mode-btn">🌙</button>
       <img src="img/formal img.png" alt="Raphael Sampaio" class="profile-photo" />
     </div>
   </header>
@@ -42,6 +43,12 @@
           Transforming business processes through intelligent automation. Specialized in Python, Blue Prism, N8N, and AI solutions.
         </p>
         <div class="hero-social">
+          <a href="https://www.youtube.com/@SampaioDev" target="_blank" rel="noopener" class="hero-social-link">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M23.5 6.2s-.2-1.6-.8-2.3c-.7-.8-1.4-.8-1.7-.9C18.6 2.7 12 2.7 12 2.7h0s-6.6 0-9 0.3c-.3 0-1 .1-1.7.9C0.7 4.6 0.5 6.2 0.5 6.2S0.3 8.1 0.3 10v1.9c0 1.9.2 3.8.2 3.8s.2 1.6.8 2.3c.7.8 1.6.8 2 0.9 1.5.1 8.7.3 8.7.3s6.6 0 9-0.3c.3 0 1-.1 1.7-.9.6-.7.8-2.3.8-2.3s.2-1.9.2-3.8V10c0-1.9-.2-3.8-.2-3.8zM9.8 14.7V7.8l6.1 3.4-6.1 3.5z"></path>
+            </svg>
+          </a>
+
           <a href="https://www.linkedin.com/in/raphaelssampaio/" target="_blank" rel="noopener" class="hero-social-link">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M19 0h-14C2.2 0 0 2.2 0 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5V5c0-2.8-2.2-5-5-5zM8 19H5v-9h3v9zM6.5 8.3C5.6 8.3 5 7.7 5 6.9 5 6 5.6 5.4 6.5 5.4S8 6 8 6.9c0 .8-.6 1.4-1.5 1.4zM20 19h-3v-4.8c0-1.2-.4-2-1.5-2-0.8 0-1.3.5-1.5 1.1-.1.2-.1.6-.1.9V19h-3v-9h3v1.3c.4-.6 1.1-1.5 2.7-1.5 2 0 3.4 1.3 3.4 4.1V19z"></path>
@@ -53,16 +60,85 @@
               <path d="M12 .3C5.4.3 0 5.7 0 12.3c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6V21c-3.3.7-4-1.4-4-1.4-.5-1.3-1.2-1.7-1.2-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 1.8 2.7 1.3 3.3 1 .1-.7.4-1.3.8-1.6-2.7-.3-5.4-1.3-5.4-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2.9-.3 1.9-.4 2.8-.4s1.9.1 2.8.4c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.3.8 1 .8 2v3c0 .3.2.7.8.6 4.8-1.6 8.2-6.1 8.2-11.4C24 5.7 18.6.3 12 .3z"></path>
             </svg>
           </a>
-
-          <a href="https://www.youtube.com/@SampaioDev" target="_blank" rel="noopener" class="hero-social-link">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M23.5 6.2s-.2-1.6-.8-2.3c-.7-.8-1.4-.8-1.7-.9C18.6 2.7 12 2.7 12 2.7h0s-6.6 0-9 0.3c-.3 0-1 .1-1.7.9C0.7 4.6 0.5 6.2 0.5 6.2S0.3 8.1 0.3 10v1.9c0 1.9.2 3.8.2 3.8s.2 1.6.8 2.3c.7.8 1.6.8 2 0.9 1.5.1 8.7.3 8.7.3s6.6 0 9-0.3c.3 0 1-.1 1.7-.9.6-.7.8-2.3.8-2.3s.2-1.9.2-3.8V10c0-1.9-.2-3.8-.2-3.8zM9.8 14.7V7.8l6.1 3.4-6.1 3.5z"></path>
-            </svg>
-          </a>
         </div>
         <div class="hero-actions">
           <a href="#contact" class="btn btn-primary">Get In Touch</a>
           <a href="projects.html" class="btn btn-secondary">View Projects</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Section -->
+  <section class="featured-projects">
+    <div class="container">
+      <h2 style="text-align: center; margin-bottom: 3rem;">Featured Projects</h2>
+      <div class="projects-grid">
+        <!-- Featured Projects Cards - To add new projects: copy a project-card div, update class to project-NEW_ID, content, and add .project-NEW_ID { background-image: url('img/image.jpg'); } in styles.css -->
+        <div class="project-card project-chatbot">
+          <div class="project-overlay">
+            <h3>Telegram Chatbot Creation</h3>
+            <p>Learn how to create a Telegram chatbot in less than 8 minutes using automation tools.</p>
+            <div class="project-tags">
+              <span>Automation</span>
+              <span>Chatbot</span>
+              <span>Telegram</span>
+            </div>
+            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7446473971769708544/?originTrackingId=rqN3797BZKga3xP1IbwcJg%3D%3D" target="_blank" class="project-link">View Project</a>
+          </div>
+        </div>
+        <div class="project-card project-OCR-banking">
+          <div class="project-overlay">
+            <h3>OCR Banking Data Analytics</h3>
+            <p>Automated extraction and analysis of banking data using OCR technology for efficient processing.</p>
+            <div class="project-tags">
+              <span>OCR</span>
+              <span>Analytics</span>
+              <span>Banking</span>
+            </div>
+            <a href="projects.html#ocr" class="project-link">View Project</a>
+          </div>
+        </div>
+        <div class="project-card project-linkedin">
+          <div class="project-overlay">
+            <h3>LinkedIn Automation</h3>
+            <p>Strategic automation for LinkedIn growth, including connection requests and content posting.</p>
+            <div class="project-tags">
+              <span>Strategy</span>
+              <span>Growth</span>
+              <span>Automation</span>
+            </div>
+            <a href="projects.html#linkedin" class="project-link">View Project</a>
+          </div>
+        </div>
+        <!-- End Featured Projects Cards -->
+      </div>
+      <div class="projects-cta">
+        <a href="projects.html" class="btn btn-primary">View All Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Automation Tips Section -->
+  <section class="automation-tips">
+    <div class="container">
+      <h2 style="text-align: center; margin-bottom: 3rem;">Automation Tips</h2>
+      <div class="tips-grid">
+        <div class="tip-card">
+          <h3>Social Media Automation</h3>
+          <p>Automate posting schedules, engagement responses, and content curation on platforms like LinkedIn, Instagram, and Twitter to save hours each week.</p>
+        </div>
+        <div class="tip-card">
+          <h3>Work Productivity</h3>
+          <p>Use RPA to automate repetitive tasks like data entry, report generation, and email sorting, freeing up time for strategic work.</p>
+        </div>
+        <div class="tip-card">
+          <h3>Personal Life Hacks</h3>
+          <p>Automate bill payments, grocery lists, appointment reminders, and even smart home controls to streamline daily routines.</p>
+        </div>
+        <div class="tip-card">
+          <h3>Business Processes</h3>
+          <p>Implement chatbots for customer service, automated invoicing, and inventory management to scale operations efficiently.</p>
         </div>
       </div>
     </div>
@@ -179,5 +255,22 @@
       </div>
     </div>
   </footer>
+  <script>
+    const toggle = document.getElementById('dark-mode-toggle');
+    const body = document.body;
+    const currentTheme = localStorage.getItem('theme');
+    if (currentTheme === 'light') {
+      // Only add dark if explicitly set to light
+    } else {
+      body.classList.add('dark');
+      toggle.textContent = '☀️';
+    }
+    toggle.addEventListener('click', () => {
+      body.classList.toggle('dark');
+      const theme = body.classList.contains('dark') ? 'dark' : 'light';
+      localStorage.setItem('theme', theme);
+      toggle.textContent = theme === 'dark' ? '☀️' : '🌙';
+    });
+  </script>
 </body>
 </html>
