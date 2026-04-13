@@ -609,6 +609,18 @@ body {
   background-image: url("img/FLUXO CAIXA DASH.png");
 }
 
+.project-fillForms {
+  background-image: url("img/fillForms.jpg");
+}
+
+.project-linkedInJobSearch {
+  background-image: url("img/linkedInJobSearch.jpg");
+}
+
+.project-amazonYt {
+  background-image: url("img/amazonYt.jpg");
+}
+
 .project-linkedin {
   background-image: url("img/linkedin automation.png");
 }
